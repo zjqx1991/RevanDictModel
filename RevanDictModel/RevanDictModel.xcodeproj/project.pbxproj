@@ -13,6 +13,7 @@
 		0411C6901E61DC1000C0897E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0411C68E1E61DC1000C0897E /* Main.storyboard */; };
 		0411C6921E61DC1000C0897E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0411C6911E61DC1000C0897E /* Assets.xcassets */; };
 		0411C6951E61DC1000C0897E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0411C6931E61DC1000C0897E /* LaunchScreen.storyboard */; };
+		0411C6A11E61DCB700C0897E /* NSDictionary+property.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C6A01E61DCB700C0897E /* NSDictionary+property.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		0411C6911E61DC1000C0897E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0411C6941E61DC1000C0897E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0411C6961E61DC1000C0897E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0411C69F1E61DCB700C0897E /* NSDictionary+property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+property.h"; sourceTree = "<group>"; };
+		0411C6A01E61DCB700C0897E /* NSDictionary+property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+property.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		0411C6841E61DC1000C0897E /* RevanDictModel */ = {
 			isa = PBXGroup;
 			children = (
+				0411C69C1E61DC9A00C0897E /* RevanDictModelTools */,
 				0411C6881E61DC1000C0897E /* AppDelegate.h */,
 				0411C6891E61DC1000C0897E /* AppDelegate.m */,
 				0411C68B1E61DC1000C0897E /* ViewController.h */,
@@ -77,6 +81,31 @@
 				0411C6861E61DC1000C0897E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0411C69C1E61DC9A00C0897E /* RevanDictModelTools */ = {
+			isa = PBXGroup;
+			children = (
+				0411C69D1E61DC9A00C0897E /* 字典转模型方法 */,
+				0411C69E1E61DC9A00C0897E /* 生成字典模型属性 */,
+			);
+			path = RevanDictModelTools;
+			sourceTree = "<group>";
+		};
+		0411C69D1E61DC9A00C0897E /* 字典转模型方法 */ = {
+			isa = PBXGroup;
+			children = (
+				0411C69F1E61DCB700C0897E /* NSDictionary+property.h */,
+				0411C6A01E61DCB700C0897E /* NSDictionary+property.m */,
+			);
+			path = "字典转模型方法";
+			sourceTree = "<group>";
+		};
+		0411C69E1E61DC9A00C0897E /* 生成字典模型属性 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "生成字典模型属性";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0411C68D1E61DC1000C0897E /* ViewController.m in Sources */,
+				0411C6A11E61DCB700C0897E /* NSDictionary+property.m in Sources */,
 				0411C68A1E61DC1000C0897E /* AppDelegate.m in Sources */,
 				0411C6871E61DC1000C0897E /* main.m in Sources */,
 			);

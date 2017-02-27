@@ -55,11 +55,11 @@
         
         // 二级转换：判断value是否是字典，如果是，字典转模型
         // 并且是自定义对象才需要转模型
-//        if ([value isKindOfClass:[NSDictionary class]] && ![ivarType hasPrefix:@"NS"]) {
-//            // 获取类
-//            Class modelClass = NSClassFromString(ivarType);
-//            value = [modelClass modelWithDict:value];
-//        }
+        if ([value isKindOfClass:[NSDictionary class]] && ![ivarType hasPrefix:@"NS"]) {
+            // 获取类
+            Class modelClass = NSClassFromString(ivarType);
+            value = [modelClass modelWithDict:value];
+        }
         
         
         // KVC 赋值

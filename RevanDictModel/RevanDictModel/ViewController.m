@@ -21,15 +21,15 @@
     [super viewDidLoad];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"image.plist" ofType:nil];
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
-    
+    NSMutableArray *arrayM = [NSMutableArray array];
     for (NSDictionary *dict in array) {
         /// 自动生成模型属性
         //[dict createPropertyCode];
         /// 字典转模型
         imageModel *imagemodel = [imageModel modelWithDict:dict];
-        NSLog(@"%@", imagemodel);
+        [arrayM addObject:imagemodel];
     }
-    
+    NSLog(@"%@", arrayM);
     
 }
 

@@ -7,10 +7,14 @@
 //
 
 #import "NSDictionary+property.h"
+#import <objc/message.h>
 
 
 @implementation NSDictionary (property)
 
+/**
+ 自动生成‘模型属性’
+ */
 - (void)createPropertyCode {
 
     //定义一个可变数组
@@ -34,5 +38,6 @@
     }];
     NSLog(@"字典属性%@", codes);
 }
+
 
 @end

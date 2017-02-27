@@ -14,6 +14,9 @@
 		0411C6921E61DC1000C0897E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0411C6911E61DC1000C0897E /* Assets.xcassets */; };
 		0411C6951E61DC1000C0897E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0411C6931E61DC1000C0897E /* LaunchScreen.storyboard */; };
 		0411C6A11E61DCB700C0897E /* NSDictionary+property.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C6A01E61DCB700C0897E /* NSDictionary+property.m */; };
+		0411C6A51E61E1F000C0897E /* image.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0411C6A41E61E1F000C0897E /* image.plist */; };
+		0411C6A81E61E26D00C0897E /* imageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411C6A71E61E26D00C0897E /* imageModel.m */; };
+		045CDAA41E62967A0066E948 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 045CDAA31E62967A0066E948 /* NSObject+Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +30,13 @@
 		0411C6911E61DC1000C0897E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0411C6941E61DC1000C0897E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0411C6961E61DC1000C0897E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0411C69F1E61DCB700C0897E /* NSDictionary+property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+property.h"; sourceTree = "<group>"; };
-		0411C6A01E61DCB700C0897E /* NSDictionary+property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+property.m"; sourceTree = "<group>"; };
+		0411C69F1E61DCB700C0897E /* NSDictionary+property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+property.h"; path = "../字典转模型方法/NSDictionary+property.h"; sourceTree = "<group>"; };
+		0411C6A01E61DCB700C0897E /* NSDictionary+property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+property.m"; path = "../字典转模型方法/NSDictionary+property.m"; sourceTree = "<group>"; };
+		0411C6A41E61E1F000C0897E /* image.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = image.plist; sourceTree = "<group>"; };
+		0411C6A61E61E26D00C0897E /* imageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageModel.h; sourceTree = "<group>"; };
+		0411C6A71E61E26D00C0897E /* imageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageModel.m; sourceTree = "<group>"; };
+		045CDAA21E62967A0066E948 /* NSObject+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
+		045CDAA31E62967A0066E948 /* NSObject+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,9 @@
 				0411C6891E61DC1000C0897E /* AppDelegate.m */,
 				0411C68B1E61DC1000C0897E /* ViewController.h */,
 				0411C68C1E61DC1000C0897E /* ViewController.m */,
+				0411C6A61E61E26D00C0897E /* imageModel.h */,
+				0411C6A71E61E26D00C0897E /* imageModel.m */,
+				0411C6A41E61E1F000C0897E /* image.plist */,
 				0411C68E1E61DC1000C0897E /* Main.storyboard */,
 				0411C6911E61DC1000C0897E /* Assets.xcassets */,
 				0411C6931E61DC1000C0897E /* LaunchScreen.storyboard */,
@@ -95,8 +106,8 @@
 		0411C69D1E61DC9A00C0897E /* 字典转模型方法 */ = {
 			isa = PBXGroup;
 			children = (
-				0411C69F1E61DCB700C0897E /* NSDictionary+property.h */,
-				0411C6A01E61DCB700C0897E /* NSDictionary+property.m */,
+				045CDAA21E62967A0066E948 /* NSObject+Model.h */,
+				045CDAA31E62967A0066E948 /* NSObject+Model.m */,
 			);
 			path = "字典转模型方法";
 			sourceTree = "<group>";
@@ -104,6 +115,8 @@
 		0411C69E1E61DC9A00C0897E /* 生成字典模型属性 */ = {
 			isa = PBXGroup;
 			children = (
+				0411C69F1E61DCB700C0897E /* NSDictionary+property.h */,
+				0411C6A01E61DCB700C0897E /* NSDictionary+property.m */,
 			);
 			path = "生成字典模型属性";
 			sourceTree = "<group>";
@@ -166,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0411C6A51E61E1F000C0897E /* image.plist in Resources */,
 				0411C6951E61DC1000C0897E /* LaunchScreen.storyboard in Resources */,
 				0411C6921E61DC1000C0897E /* Assets.xcassets in Resources */,
 				0411C6901E61DC1000C0897E /* Main.storyboard in Resources */,
@@ -180,7 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0411C68D1E61DC1000C0897E /* ViewController.m in Sources */,
+				0411C6A81E61E26D00C0897E /* imageModel.m in Sources */,
 				0411C6A11E61DCB700C0897E /* NSDictionary+property.m in Sources */,
+				045CDAA41E62967A0066E948 /* NSObject+Model.m in Sources */,
 				0411C68A1E61DC1000C0897E /* AppDelegate.m in Sources */,
 				0411C6871E61DC1000C0897E /* main.m in Sources */,
 			);
@@ -300,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = RevanDictModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.zjqxRevan.RevanDictModel;
@@ -311,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = RevanDictModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.zjqxRevan.RevanDictModel;
@@ -337,6 +355,7 @@
 				0411C69B1E61DC1000C0897E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
